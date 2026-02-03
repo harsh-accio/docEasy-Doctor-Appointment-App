@@ -133,10 +133,7 @@ const Sidebar = () => {
       </aside>
     )}
 
-    {/* MAIN CONTENT */}
-    <div className="flex-1 p-6">
-      {/* Your routed pages will render here */}
-    </div>
+   
 
   </div>
 );

@@ -20,6 +20,7 @@ app.use(express.json());
 app.use(cors());
 
 // api endpoints
+app.get('/test',(req,res)=>res.send("Heloo"));
 //localhost:8000/api/admin/add-doctor
 app.use("/api/admin", adminRoutes);
 app.use("/api/doctor", doctorRoutes);

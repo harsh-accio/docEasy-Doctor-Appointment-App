@@ -14,7 +14,7 @@ const Navbar = () => {
     authtoken && setAuthtoken("");
     authtoken && localStorage.removeItem("Authtoken");
     doctortoken && setDoctorToken('')
-    doctortoken && localStorage.removeItem('doctortoken')
+    doctortoken && localStorage.removeItem('DoctorToken')
   };
   return (
     <div className="w-full h-16 bg-white shadow-md flex items-center justify-between px-4 md:px-8">

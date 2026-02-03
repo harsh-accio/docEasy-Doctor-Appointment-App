@@ -44,7 +44,7 @@ const App = () => {
             {/* ================= ADMIN ================= */}
             {authtoken && (
               <>
-                <Route path="/" element={<Navigate to="/dashboard" />} />
+                <Route path="/" element={<Dashboard />} />
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/add-doctor" element={<AddDoctor />} />
                 <Route path="/my-appointments" element={<Appointments />} />
@@ -56,7 +56,7 @@ const App = () => {
             {/* ================= DOCTOR ================= */}
             {doctortoken && (
               <>
-                <Route path="/" element={<Navigate to="/doctor-dashboard" />} />
+                <Route path="/" element={<DoctorDashboard />}  />
                 <Route path="/doctor-dashboard" element={<DoctorDashboard />} />
                 <Route
                   path="/doctor-appointments"

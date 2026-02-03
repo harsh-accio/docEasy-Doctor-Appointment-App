@@ -156,15 +156,15 @@ const MyAppointments = () => {
 
                 <div className="mt-2 text-sm text-gray-600">
                   <p className="font-medium text-gray-800">Address</p>
-                  <p>{item.docData.address}</p>
-                  <p>{item.docData.address}</p>
+                  <p>Mayur Vihar Phase1, C-Block ,New Delhi</p>
+              
                 </div>
 
                 <p className="mt-2 text-sm">
                   <span className="font-medium text-gray-800">
                     Date & Time:
                   </span>{" "}
-                  {slotDateFormat(item.slotDate)} | {item.slotTime} AM
+                  {item.slotDate}  | {item.slotTime} AM
                 </p>
               </div>
 
@@ -182,14 +182,14 @@ const MyAppointments = () => {
                   <>
                     <button
                       onClick={() => appointmentRazorpay(item._id)}
-                      className="bg-green-900 text-white py-2 rounded-lg text-sm font-medium hover:bg-green-950 transition"
+                      className="bg-green-900 text-white py-2 rounded-lg text-sm font-medium hover:bg-green-950 transition cursor-pointer"
                     >
                       Pay Online
                     </button>
 
                     <button
                       onClick={() => cancelAppointment(item._id)}
-                      className="border border-gray-300 text-gray-600 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition"
+                      className="border border-gray-300 text-gray-600 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition cursor-pointer"
                     >
                       Cancel Appointment
                     </button>
